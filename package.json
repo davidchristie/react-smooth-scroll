@@ -1,0 +1,65 @@
+{
+  "author": "David Christie",
+  "babel": {
+    "presets": [
+      "latest",
+      "react"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/davidchristie/davidchristie.github.io/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-watch": "^2.0.6",
+    "css-loader": "^0.26.2",
+    "enzyme": "^2.7.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^19.0.2",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "standard": "^8.6.0",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1",
+    "webpack-merge": "^3.0.0"
+  },
+  "homepage": "https://github.com/davidchristie/davidchristie.github.io#readme",
+  "jest": {
+    "bail": true,
+    "moduleNameMapper": {
+      "\\.css$": "identity-obj-proxy"
+    },
+    "testMatch": [
+      "<rootDir>/app/**/*.test.js"
+    ]
+  },
+  "license": "MIT",
+  "name": "davidchristie.github.io",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidchristie/davidchristie.github.io.git"
+  },
+  "scripts": {
+    "build": "npm test && babel-node scripts/build",
+    "start": "babel-watch scripts/start",
+    "test": "standard && jest"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    },
+    "ignore": [
+      "build"
+    ]
+  },
+  "version": "1.0.0"
+}
