@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> should match snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Link)
+    to="elementId"
+  >
+    <Link
+      isActive={false}
+      onClick={[Function]}
+      to="elementId"
+    >
+      <span
+        className="link"
+        onClick={[Function]}
+      />
+    </Link>
+  </Connect(Link)>
+</Provider>
+`;

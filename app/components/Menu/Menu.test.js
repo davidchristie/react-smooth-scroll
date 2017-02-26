@@ -2,11 +2,11 @@ import { shallow } from 'enzyme'
 import toJSON from 'enzyme-to-json'
 import React from 'react'
 
-import App from '../App'
+import Menu from '../Menu'
 
-describe('<App />', () => {
+describe('<Menu />', () => {
   it('should match snapshot', () => {
-    const wrapper = shallow(<App />)
+    const wrapper = shallow(<Menu />)
     expect(toJSON(wrapper)).toMatchSnapshot()
   })
 })
